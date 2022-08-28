@@ -1,0 +1,56 @@
+//pantallas extra anchas
+
+@media(min-width:1400px){
+    .header-logo,.servicios,.footer-content,.presentacion{
+        width: 100%;
+        
+    }
+
+    
+}
+
+
+//pantallas medianas
+@media(min-width:992px){
+    
+    .presentacion div{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    nav{
+        @include caja-flex(center,center,wrap);
+
+        padding: 20px 0;
+    }
+}
+
+//pantallas pequeñas
+
+@media (max-width:426px){
+
+    .header-logo{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        height: 15vh;
+        
+    }
+
+    .presentacion,.tipo-servicios{
+        flex-direction: column;
+    }
+    .presentacion {
+        @include caja-flex(center,center,wrap);
+        padding: 200px 0 ;
+        div{
+            text-align: center;
+            margin-bottom: 10px;
+    
+            h1,p{
+                padding: 0;
+            }
+        }
+    }
+}

@@ -87,7 +87,7 @@
         </div>
 
         <footer>
-            <p class="footer-content">
+            <p class="footer-content ejemplo">
                 ArtWEB &copy;Todos los derechos reservados 2021
             </p>
         </footer>
@@ -96,6 +96,8 @@
             window.onscroll = function () {
                 if (window.pageYOffset > 10) {
                     menu.style.backgroundColor = '#fff';
+                    menu.style.height= '10vh';
+                    menu.style.transition = '.5s';
                 }
                 else {
                     menu.style.backgroundColor = 'initial';

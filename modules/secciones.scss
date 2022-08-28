@@ -5,5 +5,51 @@
 }
 
 .presentacion{
-    padding:200px 0 50px 0;
+    padding:22rem 5rem;
+    @include caja-flex(space-between,center,nowrap);
+
+        .flex-item2{
+        text-align: center;
+         };
+
+         h1{
+            margin-top: 0;
+            padding-right: 20px ;
+            font-size: $font-h1;
+         }
+
+         p{
+            padding:0 10px 20px 0;
+         }
+
 }
+
+.servicios{
+    div{
+        text-align: center;
+    }
+
+    .tipo-servicios{
+        @include caja-flex(center,center,nowrap);
+
+        i{
+            font-size: 30px;
+            color: #6495ed;
+        }
+    }
+}
+
+
+footer{
+    min-height: 80px;
+    background-color: rgb(52, 53, 51);
+    margin-top: 0;
+
+    .footer-content{
+        text-align: center;
+        padding: 30px 0;
+    }
+}
+
+
+

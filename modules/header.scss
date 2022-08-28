@@ -5,12 +5,27 @@
     position: fixed;
     top: 0;
     z-index: 999;
+    padding: 3em 3em;
     @include caja-flex(space-between,center,nowrap);
 }
 
 nav{
     ul{
         @include caja-flex(space-between,center,nowrap);
+        padding: 0;
+
+    }
+
+    a{
+        padding: 10px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    a:hover{
+        color: #6495ed;
+        transform: scale(1.1);
+        transition: .4s;
     }
     
 }
